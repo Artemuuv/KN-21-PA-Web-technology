@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Маніпуляція DOM та обробка подій</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Зміна вмісту елемента</h2>
+            <p id="text-to-change">Початковий текст. Натисни кнопку, щоб його змінити.</p>
+            <button id="btn-change-text">Змінити текст</button>
+        </section>
+
+        <section>
+            <h2>Обробка подій</h2>
+            <button id="hover-btn" class="hover-btn">Наведіть курсор на мене</button>
+            <p id="hover-text">Наведіть курсор на кнопку, і ви побачите зміну стилю.</p>
+        </section>
+
+        <section>
+            <h2>Додавання нового елемента</h2>
+            <button id="btn-add-element">Додати елемент</button>
+            <div id="elements-container"></div>
+        </section>
+
+        <section>
+            <h2>Індивідуальне завдання (Варіант 21)</h2>
+            <button id="btn-variant">Натисніть 21 раз!</button>
+            <p>Натискань: <strong id="click-counter">0</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Лабораторна робота 5. JavaScript, DOM, події.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
