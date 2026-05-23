@@ -1,0 +1,76 @@
+/* Базові загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 1. РОБОТА З FLEXBOX: Стилізація контейнера */
+.container {
+    display: flex;              /* Робимо контейнер флексовим */
+    flex-wrap: wrap;            /* Дозволяємо карткам переноситися на новий рядок */
+    justify-content: center;    /* Вирівнюємо картки по центру горизонталi */
+    align-items: center;        /* Вирівнюємо по вертикалі */
+    padding: 30px;
+    gap: 15px;                  /* Сучасний відступ між картками */
+}
+
+/* 2. ДЕМОНСТРАЦІЯ BOX MODEL: Стилізація блоків-карток */
+.box {
+    background-color: #fff;
+    border: 2px solid #333;     /* Рамка (Border) */
+    padding: 15px;              /* Внутрішній відступ (Padding) */
+    margin: 10px;               /* Зовнішній відступ (Margin) */
+    width: 220px;               /* Ширина контенту (Width) */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.box img {
+    width: 100%;
+    height: 110px;        /* Фіксована висота для всіх картинок */
+    object-fit: cover;    /* Обрізає картинку так, щоб вона не сплющувалась */
+    border-radius: 4px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* 3. МЕДІА-ЗАПИТ ДЛЯ ПЛАНШЕТІВ (екран менше 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: space-around; /* Рівномірно розподіляємо простір */
+    }
+}
+
+/* 4. МЕДІА-ЗАПИТ ДЛЯ МОБІЛОК (екран менше 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Картки стають одна під одною в стовпчик */
+        padding: 10px;
+    }
+
+    /* Виконуємо додаткові вимоги методички для мобільної версії */
+    .box {
+        background-color: #ffe0b2;                      /* Змінено колір заливки блоків */
+        font-family: 'Courier New', Courier, monospace;  /* Змінено шрифт */
+        width: 85%;                                     /* Адаптуємо ширину під мобільний екран */
+    }
+
+    .box p {
+        font-size: 16px;                                /* Змінено (збільшено) розмір шрифту */
+        color: #222;
+    }
+}
