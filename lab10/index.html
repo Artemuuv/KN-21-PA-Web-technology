@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 10</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">MyPortfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#skills">Навички</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙 Темна тема</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <h1>Привіт! Мене звати Артем</h1>
+                <p>Я студент університету, вивчаю комп'ютерні науки</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Мої навички</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Python/C/C++</h3>
+                        <p>програмування та написання логіки.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web (HTML/CSS/JS)</h3>
+                        <p>Створення адаптивних та інтерактивних інтерфейсів користувача.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Зв'язатися зі мною</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" placeholder="Введіть ім'я">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" placeholder="Введіть email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення:</label>
+                        <textarea id="message" rows="4" placeholder="Що ви хочете обговорити?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Артем. Усі права захищено. Лабораторна робота №10.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
